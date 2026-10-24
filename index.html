@@ -10,7 +10,7 @@
         html {
     scroll-behavior: smooth;
 }
-* {
+        * {
     box-sizing: border-box;
 }
 
@@ -90,35 +90,32 @@ body > div, body > header, body > section, body > form {
      /* أضف هذا الكود داخل وسوم <style> الموجودة لديك لتفعيل التجاوب مع الهواتف */
 @media screen and (max-width: 768px) {
     body {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-        
+        padding: 10px;
     }
 
     /* جعل صندوق الملف الشخصي (الذي يستخدم Flexbox) يتصفح بشكل عمودي على الموبايل */
     div[style*="display: flex"] {
         flex-direction: column !important;
-        width: 80% !important;
+        width: 100% !important;
         text-align: center;
     }
 
     div[style*="display: flex"] img {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         float: none !important;
     }
 
     /* ضبط الصناديق والنماذج لتلائم عرض الشاشات الصغيرة */
     .info-box {
         display: block !important;
-        width: 80% !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
+        width: 100% !important;
+        padding: 20px !important;
         margin: 20px auto !important;
     }
 
     /* جعل حقول النصوص والتاريخ المرضي تتمدد بعرض الشاشة بالكامل */
     textarea {
-        width: 80% !important;
+        width: 100% !important;
     }
 }
 /* 1. التنسيق الأساسي لجميع الروابط */
