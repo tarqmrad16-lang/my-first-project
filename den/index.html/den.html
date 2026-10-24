@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشروعي الطبي والصحي</title>
+    
+    <!-- تنسيقات CSS الخاصة بالصفحة -->
+    <style>
+        html {
+    scroll-behavior: smooth;
+}
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background-color: #ffffff92; /* لون خلفية هادئ ومريح */
+            color: #333333; /* لون النص الأساسي */
+            margin: 10;
+            padding: 20px;
+            direction: rtl;
+            text-align: center;
+        }
+
+        /* تنسيق العناوين */
+        h1, h2,p {
+            color: #ffffff; /* لون أزرق طبي هادئ */
+        }
+        h2 {
+            color: #084f78; /* لون أزرق طبي هادئ */
+            text-align: center;
+        }
+
+
+        /* تنسيق الصناديق أو الأقسام (اختياري) */
+        .section {
+            background-color: #084f78;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 3px 7px rgba(227, 227, 227, 0.34);
+        }
+        img {
+    width: 250px; /* أو أي حجم يناسبك */
+    height: auto; /* للحفاظ على أبعاد الصورة الصحيحة */
+    border-radius: 125px;
+    float: right;
+}
+.info-box {
+            display: flex;          /* لجعل العناصر بجانب بعضها */
+            align-items: center;    /* محاذاة العناصر عمودياً في المنتصف */
+            gap: 30px;              /* مسافة الفراغ بين الصورة والنص */
+            background-color: #c63a3a; /* خلفية بيضاء للصندوق */
+            padding: 30px;
+            border-radius: 12px;    /* زوايا دائرية للصندوق */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* ظل خفيف للصندوق */
+            max-width: 500px;
+            margin: 40px auto;      /* توسيط الصندوق في الصفحة */
+        }
+
+        /* تنسيق الصورة */
+        .info-box img {
+            width: 150px;           /* عرض الصورة */
+            height: 150px;          /* ارتفاع الصورة */
+            object-fit: cover;      /* لضبط مقاسات الصورة بدون تشويه */
+            border-radius: 50%;     /* لجعل الصورة دائرية تماماً */
+        }
+
+        /* تنسيق النصوص داخل الصندوق */
+        .text-content h2 {
+            color: #084f78;         /* لون العنوان (عنابي يناسب تصميمك) */
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .text-content p {
+            color: #084f78;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0;
+        }
+     /* أضف هذا الكود داخل وسوم <style> الموجودة لديك لتفعيل التجاوب مع الهواتف */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    /* جعل صندوق الملف الشخصي (الذي يستخدم Flexbox) يتصفح بشكل عمودي على الموبايل */
+    div[style*="display: flex"] {
+        flex-direction: column !important;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    div[style*="display: flex"] img {
+        margin-bottom: 15px;
+        float: none !important;
+    }
+
+    /* ضبط الصناديق والنماذج لتلائم عرض الشاشات الصغيرة */
+    .info-box {
+        display: block !important;
+        width: 100% !important;
+        padding: 20px !important;
+        margin: 20px auto !important;
+    }
+
+    /* جعل حقول النصوص والتاريخ المرضي تتمدد بعرض الشاشة بالكامل */
+    textarea {
+        width: 100% !important;
+    }
+}
+/* 1. التنسيق الأساسي لجميع الروابط */
+a {
+    color: #ffffff;           /* لون أزرق طبي هادئ يتناسق مع موقعك */
+    text-decoration: none;     /* إزالة الخط السفي الافتراضي المزعج تحت الرابط */
+    font-weight: bold;         /* جعل الخط عريضاً وواضحاً */
+    padding: 8px 16px;        /* مسافة داخلية تعطي الرابط مظهر زر أنيق */
+    border-radius: 15px;        /* انحناء ناعم للزوايا */
+    transition: all 0.3s ease; /* جعل تحول الألوان والأشكال سلس المظهر */
+    display: inline-block;     /* لضمان تطبيق الهوامش والمسافات بدقة */
+}
+
+/* 2. تأثير عند مرور مؤشر الفأرة فوق الرابط (Hover) */
+a:hover {
+    color: #ffffff;           /* تغيير لون النص إلى الأبيض */
+    background-color: #084f78;/* ظهور خلفية باللون الأزرق الطبي */
+    box-shadow: 0 4px 8px rgba(8, 79, 120, 0.2); /* إضافة ظل خفيف عند التمرير */
+}
+
+/* 3. تأثير عند الضغط على الرابط (Active) */
+a:active {
+    transform: scale(0.98);   /* حركة ضغط خفيفة جداً تعطي شعوراً بالتفاعل */
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- أضف أقسامك وعناصرك هنا -->
+    <div class="section">
+        <h1>Welcome To Dr.T.Morad.com</h1>
+    </div>
+    <hr>
+    <div style="display: flex; justify-content: center; gap: 5px; width: 1400px; margin: 40px auto; align-items: center;">
+ 
+
+   <div style="display: flex; flex-direction: row; margin-top: 50px ; align-items: center; justify-content: center; gap: 20px; padding: 20px; background-color: #f4f9f9; border-radius: 25px; width: 650px; margin: 0 auto; ">
+    
+    <!-- الصورة (ستظهر على اليمين تلقائياً بحكم اللغة العربية RTL) -->
+    <img src="1212.jpg" alt="صورة توضيحية" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
+    
+    <!-- النصوص (ستظهر على اليسار) -->
+    <div style="direction: rtl; text-align: right;">
+        <h3 style="color: #028090; margin-bottom: 15px; margin-top: 0;">الدكتور طارق زياد مراد</h3>
+        <ul>
+            <li style="margin-bottom: 10px;">أخصائي في أمراض الدم و الأورام</li>
+            <li style="margin-bottom: 10px;">حائز على شهادة البورد الأمريكي في أمراض الدم والأورام</li>
+                        <li style="margin-bottom: 10px;">عضو الجمعية الأمريكية لأمراض الدم والأورام</li>
+
+        </ul>
+
+    </div>
+
+</div> <br>
+    <div style="background-color: #084f78; width: 250px; text-align: center; margin: 0 auto; border-radius: 50px;height:50px ;">
+        <nav>
+    <a href="#111">انتقل للفحوص المطلوبة</a>
+</nav>
+</div>
+</div>
+
+    <h2>للتسجيل في الأسفل</h2>
+    <article style="font-size: 20px; color: #084f78;">
+        فقر الدم أنواع
+    </article>
+    <!-- صندوق نموذج التسجيل في كورس الأحياء -->
+<div class="info-box" style="display: block; max-width: 800px; margin: 40px auto; background: #ffffff; padding: 30px; border-radius: 25px; box-shadow: 0 2px 8px #d6d6d6">
+    
+    <!-- عنوان النموذج في المنتصف وبنفس طابع موقعك -->
+    <h2 style="text-align: center; color: #084f78; margin-bottom: 35px;">تسجيل طلب استشارة أونلاين</h2>
+    
+    <form>
+        <!-- 1. اسم الطالب (حقل نصي) -->
+        <label for="student_name" style="font-weight: bold; color: #084f78;">اسم الطالب الكامل:</label><br>
+        <input type="text" id="student_name" placeholder="أدخل اسمك الثلاثي" required style="width: 100%; padding: 10px; margin: 8px 0 20px 0; border: 1px solid #ccc; border-radius: 6px;"><br>
+
+        <!-- 2. رقم الهاتف (حقل هاتف) -->
+        <label for="student_phone" style="font-weight: bold; color: #084f78;">رقم الهاتف / واتساب:</label><br>
+        <input type="tel" id="student_phone" placeholder="09xxxxxxxx" required style="width: 100%; padding: 10px; margin: 8px 0 20px 0; border: 1px solid #ccc; border-radius: 6px;"><br>
+
+        <label for="student_phone number" style="font-weight: bold; color: #084f78;">رقم الهاتف الأرضي :</label><br>
+        <input type="tel" id="student_phone number" placeholder="011.." required style="width: 100%; padding: 10px; margin: 8px 0 20px 0; border: 1px solid #ccc; border-radius: 6px;"><br>
+        
+        <!-- 3. البريد الإلكتروني (حقل إيميل) -->
+        <label for="student_name on Telegram" style="font-weight: bold; color: #084f78;">اسم المعرف على تليغرام</label><br>
+        <input type="text" id="student_name on Telegram" placeholder="الاسم على تليغرام" style="width: 100%; padding: 10px; margin: 8px 0 20px 0; border: 1px solid #ccc; border-radius: 6px;"><br>
+
+        <!-- 4. اختيار باقة الكورس (أزرار Radio لاختيار خيار واحد فقط) -->
+        <label style="font-weight: bold; color: #084f78; display: block; margin-bottom: 10px; font-size:  20px;">اختر باقة الاشتراك المفضلة:</label>
+        
+        <input type="radio" id="package1" name="course_package" value="full">
+        <label for="package1">الباقة الشاملة (منهاج البكالوريا كاملاً + بنك الأسئلة)</label><br><br>
+        
+        <input type="radio" id="package2" name="course_package" value="first_term">
+        <label for="package2">فصل أول فقط (الوحدات الأولى)</label><br><br>
+        
+        <input type="radio" id="package3" name="course_package" value="second_term">
+        <label for="package3">فصل ثاني فقط (الوحدات اللاحقة)</label><br><br>
+
+        <!-- 5. مربعات الاختيار (Checkbox لإضافات متعددة) -->
+        <div style="margin: 20px ;">
+            <input type="checkbox" id="whatsapp_group" name="join_whatsapp">
+            <label for="whatsapp_group">أرغب بالانضمام إلى مجموعة الواتساب الخاصة بالطلاب المشتركين لمتابعة الإشعارات</label>
+        </div>
+
+        <!-- 6. ملاحظات الطالب أو استفساراته (Textarea لمسَاحة كتابة واسعة) -->
+        <label for="student_notes" style="font-weight: bold; color: #084f78; font-size: 20px;">هل لديك أي استفسار أو صعوبة معينة في مادة الأحياء تود إخبار الدكتور بها؟</label><br>
+        <textarea id="student_notes" rows="4" placeholder="اكتب استفسارك هنا..." style="width: 100%; padding: 10px; margin: 8px 0 20px 0; border: 1px solid #ccc; border-radius: 6px; font-size: 15px;"></textarea><br>
+
+        <!-- 7. زر الإرسال المتناسق مع تصميم الموقع -->
+        <div style="text-align: center;">
+            <button type="submit" style="background-color: #084f78; color: white; padding: 12px 35px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; font-weight: bold;">إرسال طلب التسجيل</button>
+        </div>
+    </form>
+</div>
+    <div id="111" class="info-box" style="display: block; max-width: 800px; margin: 40px auto; background: #ffffff; padding: 50px; border-radius: 25px; box-shadow: 0 2px 8px #084f786d">
+    
+        <!-- الفحوصات المطلوب إجراؤها (Checkbox - اختيار متعدد) -->
+<label style= "font-weight: bold; color: #084f78; display: block; margin-bottom: 5px; font-size:  25px;">الفحوصات المطلوب إجراؤها:</label><br>
+
+<div style="margin: 20px;">
+<input  type="checkbox" id="test-cbc" name="tests" value="cbc">
+<label style="font-size: 21px; color: #084f78; margin right: 8px;" for="test-cbc"  >صورة دم كاملة (CBC)</label><br>
+</div>
+
+<div style="margin: 20px;">
+<input  type="checkbox" id="test-iron" name="tests" value="Ferritin & Iron Profile">
+<label  style="font-size: 21px; color: #084f78; for="test-iron">مخزون الحديد والمناعة (Ferritin & Iron Profile)</label><br><br>
+</div>
+<hr style="color:">
+<div style="m">
+    <label  style="font-size: 21px; color: #084f78;" for="medical-history">التاريخ المرضي والأعراض الحالية:</label><br>
+<textarea style="margin-top: 15px; font-size: 15px; margin-top: 15px; width: 600px;" id="medical-history" name="history" rows="4" cols="40" placeholder="اذكر هنا الأعراض وأي أدوية سيولة تتناولها حالياً..."></textarea><br><br> 
+</div>
+
+</div>
+
+</body>
+</html>
